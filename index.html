@@ -1,31 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Links App</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Links App</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <h1>Lena Lee</h1>
 
-  <div class="container">
-    <h1>My Work</h1>
+      <button
+        class="link-btn"
+        onclick="openApp('https://lenacylee.myportfolio.com')"
+      >
+        Portfolio
+      </button>
 
-    <button class="link-btn" onclick="openApp('https://lenacylee.myportfolio.com')">
-      Portfolio
-    </button>
+      <button
+        class="link-btn"
+        onclick="openApp('https://lenacylee.cargo.site')"
+      >
+        Gallery
+      </button>
 
-    <button class="link-btn" onclick="openApp('https://lenacylee.cargo.site')">
-      Cargo Site
-    </button>
+      <p class="hint">Tap to preview</p>
+    </div>
 
-    <p class="hint">Tap to preview</p>
-  </div>
+    <!-- App overlay -->
+    <div id="appView"></div>
 
-  <!-- App overlay -->
-  <div id="appView"></div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
